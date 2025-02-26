@@ -21,5 +21,7 @@ class PantallaPrincipal : AppCompatActivity() {
         val textV =  findViewById<TextView>(R.id.mensaje)
         val texto:String = intent.extras?.getString("Extra_Texto").orEmpty()
         textV.text = "Bienvenido $texto"
+
+        //prueba rama main
     }
 }
