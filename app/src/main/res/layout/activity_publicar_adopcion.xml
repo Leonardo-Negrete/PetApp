@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nombre de la mascota"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Especie"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Edad aproximada"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Raza"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tamaño"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Sexo"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -105,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Esterilización"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="8dp"/>
@@ -115,7 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Vacunas"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColorHint="#CCCCCC"
                 android:layout_marginBottom="16dp"/>
@@ -135,7 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Seleccionar foto"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:padding="12dp"
                 android:textColor="#CCCCCC"
                 android:layout_marginBottom="16dp"/>
