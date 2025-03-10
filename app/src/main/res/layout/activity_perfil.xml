@@ -76,6 +76,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/tvEditarPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Editar perfil"
@@ -83,6 +84,7 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/tvMetodosPago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Métodos de pago"
@@ -104,6 +106,7 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/tvFinalizarSesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Finalizar la sesión"

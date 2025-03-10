@@ -15,6 +15,9 @@
         <activity
             android:name=".PantallaPrincipal"
             android:exported="false" />
+        <activity android:name=".EditarPerfilActivity"/>
+        <activity android:name=".MetodosPagoActivity"/>
+
         <activity
             android:name=".MainSolicitudes"
             android:exported="true">  <intent-filter>
