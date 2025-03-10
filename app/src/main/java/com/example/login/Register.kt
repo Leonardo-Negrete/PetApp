@@ -6,57 +6,46 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity() {
+class Register : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var user: EditText
     private lateinit var psw: EditText
-    private lateinit var btnLogin: Button
+    private lateinit var btnRegister: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
 
         auth = FirebaseAuth.getInstance()
-
-        //Si ya está autenticado, lo mandamos a la pantalla principal
-        if (auth.currentUser != null) {
-            val intento = Intent(this, PantallaPrincipal::class.java)
-            intento.putExtra("Extra_Texto", auth.currentUser?.email)
-            startActivity(intento)
-            finish() // Cerramos esta pantalla
-        }
-
         user = findViewById<EditText>(R.id.email)
         psw = findViewById<EditText>(R.id.password)
-        btnLogin = findViewById<Button>(R.id.login)
-        val registerTextView = findViewById<TextView>(R.id.registerText)
+        btnRegister = findViewById<Button>(R.id.register)
+        val loginTextView = findViewById<TextView>(R.id.loginText)
 
-        registerTextView.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+        loginTextView.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        btnLogin.setOnClickListener {
+        btnRegister.setOnClickListener {
             val correo = user.text.toString().trim()
             val contra = psw.text.toString().trim()
             if (correo.isNotEmpty() && contra.isNotEmpty()) {
-                login(correo, contra)
+                register(correo, contra)
             } else {
                 Toast.makeText(this, "Ingresa las credenciales", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
-    private fun login(correo: String, contra: String) {
-        auth.signInWithEmailAndPassword(correo, contra)
+    private fun register(correo: String, contra: String) {
+        auth.createUserWithEmailAndPassword(correo, contra)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(this, "Login exitoso", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
                     val intento = Intent(this, PantallaPrincipal::class.java)
                     intento.putExtra("Extra_Texto", correo)
                     startActivity(intento)

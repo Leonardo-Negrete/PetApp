@@ -2,6 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple">#6C4EF0</color>
+    <color name="blue">#2196F3</color>
+    <color name="darkerRed">#CC0000</color>
+    <color name="darkerGray">#AAAAAA</color>
+    <color name="backgroundGray">#F3F3F3</color>
     <color name="startBankground">#3A7CA5</color>
     <color name="centerBankground">#74C0FC</color>
     <color name="endBankground">#B3E5FC</color>
