@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:padding="16dp">
+
+
+
+    <TextView
+
+        android:id="@+id/title"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Solicitudes de adopción"
+
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="16dp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_alice"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/title"
+
+        android:layout_marginTop="16dp"
+
+        app:cardCornerRadius="8dp">
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:padding="16dp"
+
+            android:gravity="center_vertical">
+
+
+
+            <ImageView
+
+                android:layout_width="50dp"
+
+                android:layout_height="50dp"
+
+                android:src="@drawable/user_icon2"
+
+                android:scaleType="centerCrop"
+
+                android:layout_marginEnd="16dp"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Alice Johnson"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"/>
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Interesado en adoptar a Bella"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_michael"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/card_alice"
+
+        android:layout_marginTop="8dp"
+
+        app:cardCornerRadius="8dp">
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:padding="16dp"
+
+            android:gravity="center_vertical">
+
+
+
+            <ImageView
+
+                android:layout_width="50dp"
+
+                android:layout_height="50dp"
+
+                android:src="@drawable/user_icon"
+
+                android:scaleType="centerCrop"
+
+                android:layout_marginEnd="16dp"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Michael Brown"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"/>
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Quiere conocer a Max"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_sophia"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/card_michael"
+
+        android:layout_marginTop="8dp"
+
+        app:cardCornerRadius="8dp">
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:padding="16dp"
+
+            android:gravity="center_vertical">
+
+
+
+            <ImageView
+
+                android:layout_width="50dp"
+
+                android:layout_height="50dp"
+
+                android:src="@drawable/user_icon"
+
+                android:scaleType="centerCrop"
+
+                android:layout_marginEnd="16dp"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Sophia Lee"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"/>
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Buscando adoptar a Luna"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+
+        android:id="@+id/contact_button"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Contacto"
+
+        app:layout_constraintTop_toBottomOf="@id/card_sophia"
+
+        android:layout_marginTop="16dp"/>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="16dp">
+
+
+
+        <ImageView
+
+            android:layout_width="0dp"
+
+            android:layout_height="24dp"
+
+            android:layout_weight=".25"
+
+            android:src="@drawable/Casita_icon"/>
+
+
+
+        <ImageView
+
+            android:layout_width="0dp"
+
+            android:layout_height="24dp"
+
+            android:layout_weight=".25"
+
+            android:src="@drawable/search" />
+
+
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight=".25"
+            android:src="@drawable/icon"/>
+
+
+
+        <ImageView
+
+            android:layout_width="0dp"
+
+            android:layout_height="24dp"
+
+            android:layout_weight=".25"
+
+            android:src="@drawable/guardado"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
