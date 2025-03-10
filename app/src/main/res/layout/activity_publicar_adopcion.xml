@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_publicar_adopcion"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publicar Adopción"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Subtítulo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles de la Mascota"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Campos de entrada -->
+            <EditText
+                android:id="@+id/et_nombre_mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de la mascota"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/sp_especie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especie"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_edad_aproximada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad aproximada"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_raza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Raza"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/sp_tamano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tamaño"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/sp_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sexo"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/sp_esterilizacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Esterilización"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/sp_vacunas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vacunas"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Sección Agregar Foto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Foto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/btn_seleccionar_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar foto"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:textColor="#CCCCCC"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Botón Publicar -->
+            <Button
+                android:id="@+id/btn_publicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publicar"
+                android:textColor="@color/white"
+                android:backgroundTint="#634AFF"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

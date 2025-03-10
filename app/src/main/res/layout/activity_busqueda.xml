@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_busqueda"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Encabezado con fondo azul -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#D7F3F8"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encuentra a tu próxima mascota"
+                    android:textSize="29sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <!-- Barra de búsqueda -->
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_search_bar"
+                    android:hint="Buscar mascotas"
+                    android:drawableStart="@drawable/ic_search"
+                    android:padding="8dp"
+                    android:textColorHint="#A0A0A0"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Categorías de animales -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/CategoryItem">
+                        <ImageView
+                            android:id="@+id/ic_gato"
+                            android:src="@drawable/cat"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/light_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gatos"/>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/CategoryItem">
+                        <ImageView
+                            android:id="@+id/ic_perro"
+                            android:src="@drawable/dog"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/light_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perros"/>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/CategoryItem">
+                        <ImageView
+                            android:id="@+id/ic_pez"
+                            android:src="@drawable/fish"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/light_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peces"/>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/CategoryItem">
+                        <ImageView
+                            android:id="@+id/ic_conejo"
+                            android:src="@drawable/rabbit"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/light_gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Conejos"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Sección "Según Tus Búsquedas" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Según Tus Búsquedas"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+            <!-- Lista de mascotas -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:columnOrderPreserved="false">
+
+                <!-- Tarjeta 1: Mascota 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/img_luna"
+                        android:src="@drawable/luna"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/light_gray"
+                        android:layout_marginBottom="4dp"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luna"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 meses, curiosa"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <!-- Tarjeta 2: Mascota 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/img_charlie"
+                        android:src="@drawable/charlie"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/light_gray"
+                        android:layout_marginBottom="4dp"
+                        android:clipToOutline="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charlie"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 meses, juguetón"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
