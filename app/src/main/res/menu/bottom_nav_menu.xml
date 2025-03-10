@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Icono para "Inicio" -->
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_home"
+    android:title="Inicio" />
+
+    <!-- Icono para "Buscar" -->
+    <item
+        android:id="@+id/nav_buscar"
+        android:icon="@drawable/ic_search"
+    android:title="Buscar" />
+
+    <!-- Icono para "Perfil" -->
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_user"
+    android:title="Perfil" />
+
+    <!-- Icono para "Guardado" -->
+    <item
+        android:id="@+id/nav_guardado"
+        android:icon="@drawable/ic_save"
+    android:title="Guardado" />
+</menu>
